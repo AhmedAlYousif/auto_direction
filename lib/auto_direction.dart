@@ -6,8 +6,9 @@ import 'package:intl/intl.dart' as intl;
 class AutoDirection  extends StatefulWidget{
 
   final String text;
-  final Widget childWidget;
-  AutoDirection({Key key, this.text, this.childWidget}) : super(key: key);
+  final Widget child;
+
+  AutoDirection({Key key, @required this.text, @required this.child}) : super(key: key);
 
   @override
   _AutoDirectionState createState() => _AutoDirectionState();
@@ -19,10 +20,11 @@ class _AutoDirectionState extends State<AutoDirection>{
   String text;
   Widget childWidget;
 
+
   @override
   Widget build(BuildContext context) {
     text = widget.text;
-    childWidget = widget.childWidget;
+    childWidget = widget.child;
     return Directionality(
       textDirection: intl.Bidi.detectRtlDirectionality(text)? TextDirection.rtl : TextDirection.ltr,
       child: childWidget
@@ -30,3 +32,4 @@ class _AutoDirectionState extends State<AutoDirection>{
   }
 
 }
+
