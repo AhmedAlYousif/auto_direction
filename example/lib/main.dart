@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget>[
             AutoDirection(
               text: text,
-              childWidget: Padding(
+              child: Padding(
                 padding: const EdgeInsets.all(20),
                 child: TextField(
                   decoration: InputDecoration(
