@@ -11,9 +11,9 @@ packages:
   auto_direction:
     dependency: "direct main"
     description:
-      path: ".."
-      relative: true
-    source: path
+      name: auto_direction
+      url: "https://pub.dartlang.org"
+    source: hosted
     version: "0.0.3"
   boolean_selector:
     dependency: transitive
