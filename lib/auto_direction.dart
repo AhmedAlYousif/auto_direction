@@ -26,13 +26,6 @@ class _AutoDirectionState extends State<AutoDirection>{
   Widget build(BuildContext context) {
     text = widget.text;
     childWidget = widget.child;
-    AutoDirection(
-      child: Text("data"),
-      text: "",
-      onDirectionChange: (isRTL){
-
-      },
-    );
     return Directionality(
       textDirection: isRTL(text)? TextDirection.rtl : TextDirection.ltr,
       child: childWidget
