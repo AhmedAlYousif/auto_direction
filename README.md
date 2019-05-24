@@ -2,7 +2,7 @@
 
 This [widget](https://pub.dev/packages/auto_direction) changes the direction of a widget from ltr direction into rtl direction and vice versa based on the language of the text provided.
 
-[Auto RTL on a TextField](gif/TextField.gif)
+![Auto RTL on a TextField](gif/TextField.gif)
 
 ## Getting Started
 
