@@ -43,6 +43,11 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             AutoDirection(
+              onDirectionChange: (isRTL){
+                setState(() {
+                  this.isRTL = isRTL;
+                });
+              },
               text: text,
               child: Padding(
                 padding: const EdgeInsets.all(20),
@@ -53,7 +58,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   onChanged: (str){
                     setState(() {
                       text = str;
-                      isRTL = intl.Bidi.detectRtlDirectionality(str); 
                     });
                   },
                 ),
