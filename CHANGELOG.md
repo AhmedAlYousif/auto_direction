@@ -7,3 +7,6 @@
 
 ## [0.0.3]
     - The ability to listen to direction chages
+
+## [0.0.4]
+    - Update intl to 0.16.0
