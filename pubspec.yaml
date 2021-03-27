@@ -1,11 +1,11 @@
 name: auto_direction
 description: This package changes the direction of a widget from ltr direction into rtl direction and vice versa based on the language of the text provided.
-version: 0.0.4+1
-author: Ahmed Al Yousef<ahmadalsiddeeq@gmail.com>
-homepage: https://github.com/AhmedAlYousef/auto_direction
+version: 0.0.5
+author: Ahmed Al Yousif<ahmadalsiddeeq@gmail.com>
+homepage: https://github.com/AhmedAlYousif/auto_direction
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:

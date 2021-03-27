@@ -10,3 +10,6 @@
 
 ## [0.0.4]
     - Update intl to 0.16.0
+
+## [0.0.5]
+    - Migrate to Null Safety
