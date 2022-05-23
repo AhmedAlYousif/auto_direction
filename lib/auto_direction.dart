@@ -27,9 +27,9 @@ class _AutoDirectionState extends State<AutoDirection> {
   Widget build(BuildContext context) {
     text = widget.text;
     childWidget = widget.child;
-    return Directionality(
+    return text.isNotEmpty ? Directionality(
         textDirection: isRTL(text) ? TextDirection.rtl : TextDirection.ltr,
-        child: childWidget);
+        child: childWidget) : childWidget;
   }
 
   @override
