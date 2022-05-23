@@ -27,9 +27,9 @@ class _AutoDirectionState extends State<AutoDirection> {
   Widget build(BuildContext context) {
     text = widget.text;
     childWidget = widget.child;
-    return text.isNotEmpty ? Directionality(
+    return Directionality(
         textDirection: isRTL(text) ? TextDirection.rtl : TextDirection.ltr,
-        child: childWidget) : childWidget;
+        child: childWidget);
   }
 
   @override
@@ -42,6 +42,7 @@ class _AutoDirectionState extends State<AutoDirection> {
   }
 
   bool isRTL(String text) {
+    if (text.isEmpty) return Directionality.of(context) == TextDirection.rtl;
     return intl.Bidi.detectRtlDirectionality(text);
   }
 }
