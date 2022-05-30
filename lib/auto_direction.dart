@@ -36,12 +36,13 @@ class _AutoDirectionState extends State<AutoDirection> {
   void didUpdateWidget(AutoDirection oldWidget) {
     if (isRTL(oldWidget.text) != isRTL(widget.text)) {
       WidgetsBinding.instance!.addPostFrameCallback(
-          (_) => widget.onDirectionChange!(isRTL(widget.text)));
+          (_) => widget.onDirectionChange?.call(isRTL(widget.text)));
     }
     super.didUpdateWidget(oldWidget);
   }
 
   bool isRTL(String text) {
+    if (text.isEmpty) return Directionality.of(context) == TextDirection.rtl;
     return intl.Bidi.detectRtlDirectionality(text);
   }
 }
