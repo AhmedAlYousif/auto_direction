@@ -13,3 +13,7 @@
 
 ## [0.0.5]
     - Migrate to Null Safety
+
+## [0.0.6]
+    - onDirectionChange is optional
+    - If text is empty use default direction
