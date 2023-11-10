@@ -17,3 +17,7 @@
 ## [0.0.6]
     - onDirectionChange is optional
     - If text is empty use default direction
+
+## [0.0.7]
+    - max flutter SDK to the latest 3.13.0
+    - Update intl to 0.18.1
